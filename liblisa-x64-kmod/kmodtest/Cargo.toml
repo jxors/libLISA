@@ -1,0 +1,14 @@
+[package]
+name = "kmodtest"
+version = "0.1.0"
+authors = ["Jos <Jos635@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+nix = "0.18"
+libc = "0.2"
+log = "0.4"
+env_logger = "0.6"
+memmap = "0.7.0"
+memfd = "0.3"
+liblisa-x64-kmod = { path = "../" } 

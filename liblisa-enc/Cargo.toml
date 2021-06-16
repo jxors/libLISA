@@ -1,0 +1,31 @@
+[package]
+name = "liblisa-enc"
+version = "0.1.0"
+authors = ["Jos <Jos635@outlook.com>"]
+edition = "2018"
+
+[[bench]]
+name = "validity"
+harness = false
+
+[[bench]]
+name = "accesses"
+harness = false
+
+[[bench]]
+name = "dataflow"
+harness = false
+
+[dependencies]
+liblisa-core = { path = "../liblisa-core" }
+thiserror = "1"
+serde = { version = "1.0", features = [ "derive" ] }
+rand = "0.7"
+itertools = "0.9"
+log = "0.4"
+fallible-iterator = "0.2"
+maplit = "1.0"
+
+[dev-dependencies]
+criterion = "0.3"
+liblisa-x64 = { path = "../liblisa-x64" }

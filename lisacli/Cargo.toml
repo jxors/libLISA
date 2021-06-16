@@ -1,0 +1,29 @@
+[package]
+name = "lisacli"
+version = "0.1.0"
+authors = ["Jos <Jos635@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.6"
+liblisa = { path = "../liblisa" }
+liblisa-core = { path = "../liblisa-core" }
+liblisa-enc = { path = "../liblisa-enc" }
+liblisa-synth = { path = "../liblisa-synth" }
+liblisa-x64 = { path = "../liblisa-x64" }
+serde = { version = "1.0", features = [ "derive" ] }
+serde_json = "1.0"
+ctrlc = "3.1"
+jemallocator = "0.3"
+structopt = "0.3"
+bumpalo = "3.4"
+itertools = "0.9"
+capstone = "0.7.0"
+rand = "0.7"
+xed-sys = { git = "https://github.com/rust-xed/xed-sys", rev = "e2ec8500" }
+maplit = "1.0"
+crossbeam = "0.8"
+colored = "2"
+elf = "0.0.10"
+rayon = "1.5"

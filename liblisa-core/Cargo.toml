@@ -1,0 +1,25 @@
+[package]
+name = "liblisa-core"
+version = "0.1.0"
+authors = ["Jos <Jos635@outlook.com>"]
+edition = "2018"
+
+[[bench]]
+name = "randomization"
+harness = false
+
+[dependencies]
+thiserror = "1"
+serde = { version = "1.0", features = [ "derive" ] }
+rand = "0.7"
+itertools = "0.9"
+log = "0.4"
+fallible-iterator = "0.2"
+maplit = "1.0"
+hex = "0.4"
+
+[dev-dependencies]
+env_logger = "0.6"
+test-env-log = "0.2.0"
+serde_json = "1.0"
+criterion = "0.3"

@@ -1,0 +1,23 @@
+[package]
+name = "liblisa"
+version = "0.1.0"
+authors = ["Jos <Jos635@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+liblisa-core = { path = "../liblisa-core" }
+liblisa-synth = { path = "../liblisa-synth" }
+liblisa-enc = { path = "../liblisa-enc" }
+liblisa-x64 = { path = "../liblisa-x64" }
+itertools = "0.9"
+log = "0.4"
+serde = { version = "1.0", features = [ "derive" ] }
+serde_json = "1.0"
+rand = "0.7"
+thiserror = "1"
+ctrlc = "3.1"
+crossbeam = "0.8"
+rayon = "1.5"
+
+[dev-dependencies]
+criterion = "0.3"

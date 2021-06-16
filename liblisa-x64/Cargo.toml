@@ -1,0 +1,33 @@
+[package]
+name = "liblisa-x64"
+version = "0.1.0"
+authors = ["Jos <Jos635@outlook.com>"]
+edition = "2018"
+
+[[bench]]
+name = "ptrace"
+harness = false
+
+[[bench]]
+name = "system-state"
+harness = false
+
+[dependencies]
+liblisa-x64-kmod = { path = "../liblisa-x64-kmod" }
+thiserror = "1"
+log = "0.4"
+nix = "0.18"
+liblisa-core = { path = "../liblisa-core" }
+serde = { version = "1.0", features = [ "derive" ] }
+memmap = "0.7.0"
+memfd = "0.3"
+page_size = "0.4"
+memoffset = "0.6"
+
+[build-dependencies]
+bindgen = "0.55"
+
+[dev-dependencies]
+criterion = "0.3"
+env_logger = "0.6"
+test-env-log = "0.2.0"
